@@ -18,7 +18,13 @@ let dailyBtn = document.querySelector('#daily')
 let weeklyBtn = document.querySelector('#weekly')
 let monthlyBtn = document.querySelector('#monthly')
 
+let active = document.querySelector('.main-card__frequency--active')
+
 const secondSection = document.querySelector('.second-section')
+
+if(active.id == 'daily'){
+    drawElements(dailyArray)
+}
 
 dailyBtn.addEventListener('click', () => {
     drawElements(dailyArray)
